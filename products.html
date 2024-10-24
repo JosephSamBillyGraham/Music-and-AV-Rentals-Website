@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        function goToProductDetails(productName, rentPrice) {
+            // Store product details in localStorage
+            localStorage.setItem('productName', productName);
+            localStorage.setItem('rentPrice', rentPrice);
+
+            // Redirect to product-details.html
+            window.location.href = '/product-details';
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/index">Home</a></li>
+            <li><a href="/signin">Sign In</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/help">Help</a></li>
+        </ul>
+    </nav>
+    
+
+    <section class="products">
+        <h2>Products</h2>
+
+        <div class="category">
+            <h3>General</h3>
+            <div class="gallery">
+                <img src="images/inst1.jpg" alt="inst 1" onclick="goToProductDetails('inst 1', 100)">
+                <img src="images/inst2.jpg" alt="inst 2" onclick="goToProductDetails('inst 2', 150)">
+                <img src="images/inst3.jpg" alt="inst 3" onclick="goToProductDetails('inst 3', 150)">
+                <img src="images/inst4.jpg" alt="inst 4" onclick="goToProductDetails('inst 4', 150)">
+                <img src="images/inst5.jpg" alt="inst 5" onclick="goToProductDetails('inst 5', 150)">
+                <img src="images/inst6.jpg" alt="inst 6" onclick="goToProductDetails('inst 6', 150)">
+                <img src="images/inst7.jpg" alt="inst 7" onclick="goToProductDetails('inst 7', 150)">
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>Indian</h3>
+            <div class="gallery">
+                <img src="images/inst8.jpg" alt="inst 1" onclick="goToProductDetails('inst 8', 80)">
+                <img src="images/inst9.jpg" alt="inst 2" onclick="goToProductDetails('inst 9', 120)">
+                <img src="images/inst10.jpg" alt="inst 3" onclick="goToProductDetails('inst 10', 120)">
+                <img src="images/inst11.jpg" alt="inst 4" onclick="goToProductDetails('inst 11', 120)">
+                <img src="images/inst12.jpg" alt="inst 5" onclick="goToProductDetails('inst 12', 120)">
+                <img src="images/inst13.jpg" alt="inst 6" onclick="goToProductDetails('inst 13', 120)">
+                <img src="images/inst14.jpg" alt="inst 7" onclick="goToProductDetails('inst 14', 120)">
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>Ethinic</h3>
+            <div class="gallery">
+                <img src="images/inst15.jpg" alt="inst 1" onclick="goToProductDetails('inst 15', 100)">
+                <img src="images/inst16.jpg" alt="inst 2" onclick="goToProductDetails('inst 16', 150)">
+                <img src="images/inst17.jpg" alt="inst 3" onclick="goToProductDetails('inst 17', 150)">
+                <img src="images/inst18.jpg" alt="inst 4" onclick="goToProductDetails('inst 18', 150)">
+                <img src="images/inst19.jpg" alt="inst 5" onclick="goToProductDetails('inst 19', 150)">
+                <img src="images/inst20.jpg" alt="inst 6" onclick="goToProductDetails('inst 20', 150)">
+                <img src="images/inst21.jpg" alt="inst 7" onclick="goToProductDetails('inst 21', 150)">
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AV Rental Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
